@@ -1,4 +1,6 @@
 export const age = (planet, seconds) => {
+
+    //define all of the years based off of earthYear
     const earthYear = 31557600;
     const mercuryYear = 0.2408467 * earthYear;
     const venusYear = 0.61519726 * earthYear;
@@ -8,6 +10,8 @@ export const age = (planet, seconds) => {
     const uranusYear = 84.016846 * earthYear;
     const neptuneYear = 164.79132 * earthYear;
 
+
+    //each input needs to be divided by that planet's year
     let ageInSeconds;
     if (planet === 'earth') {
         ageInSeconds = seconds / 31557600;
@@ -26,5 +30,7 @@ export const age = (planet, seconds) => {
     } else if (planet === 'neptune') {
         ageInSeconds = seconds / neptuneYear;
     }
+
+    //needs to be converted to a float and fixed to two points past the decimal
     return parseFloat(ageInSeconds.toFixed(2));
 }

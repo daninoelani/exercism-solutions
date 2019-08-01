@@ -30,7 +30,7 @@ export class Change {
           (newMin.length || !newAmount) // {10}
         ) {
           min = [coin].concat(newMin); // {11}
-        } 
+        }  
       }  
 
       return (cache[value] = min); // {12}  
@@ -39,8 +39,6 @@ export class Change {
     
     return makeChange(amount); // {13}
   }
-
-
 }
 
 

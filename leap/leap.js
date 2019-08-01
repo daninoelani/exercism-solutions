@@ -5,3 +5,9 @@ export const isLeap = (year) => {
         return true;
     }
 }
+
+
+/*
+To check for a leap year, the year needed to be divisible by 4, or divisible by 400 if it is
+divisible by 100. This was a simple if/else statement to check for divisibility.    
+*/

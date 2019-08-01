@@ -6,3 +6,7 @@ export const reverseString = (str) => {
         return reversed;
         
     };
+
+
+//define a variable to return at the end; start from the end to pull each letter and add it to 
+//the front of the new reversed string
